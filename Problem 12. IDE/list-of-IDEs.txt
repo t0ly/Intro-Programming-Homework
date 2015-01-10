@@ -1,0 +1,34 @@
+#Problem 12. Development Environments
+#Perform a research (e.g. in Google or Wikipedia) and provide a short list with popular development environments (IDEs) like Visual Studio.
+#Write in a text file called “list-of-IDEs.txt” at least five IDEs along with 2-3 sentences about each of them. Use English.
+
+
+
+Eclipse        
+===
+Eclipse supports a wide array of languages,runs on many platforms, has a large ecosystem of plugins. It is open-source.
+
+
+Net Beans 
+===
+Net Beans is written in Java and mostly for Java, also an application platform. Net Beans is free software.
+
+
+MonoDevelop 
+===
+MonoDevelop is an IDE to code C# under Linux (also runs on Windows and OS X) doesn’t support the latest versions of C# very well. It is open-source.
+
+
+Code::Blocks    
+===
+Code::Blocks is an IDE that runs on all platforms, mostly oriented towards C, C++, and Fortran. Doesn’t refactor code. Open-source.
+
+
+Xcode    
+===
+Xcode is Apple’s IDE. It runs only on OSX, even though it can compile a variety of languages. Best used for iOS development. It's free.
+
+
+Jet Brains Appcode 
+===
+Often used instead of Xcode Nice GUI, and praised for its refactoring.  It's an expensive IDE at $200 license.

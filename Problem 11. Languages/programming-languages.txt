@@ -1,0 +1,35 @@
+#Problem 11. Programming Languages
+#Perform a research (e.g. in Google or Wikipedia) and provide a short list with information about the most popular programming languages. 
+#How similar are they to C#? How do they differ from C#?
+#programming-languages.txt
+
+
+C++       
+===
+Similar to C# in many ways, (e.g. it is object-oriented, functional), as it influenced the development of other languages including C#.
+Different from C# in that it compiles to native code, and therefore faster (games and core components of operating systems are usually written in C++). C++ requires the programmer to do memory 
+
+
+Java
+===
+Similar to C# in runtime compilation, strongly typed, class-based, object-oriented. It is basically Microsoft's answer to Oracle's Java. 
+Different from C# in that it is older by 7 years, is much more portable, being available on all platforms. It is very widespread in the enterprise. Often used in embedded systems.
+
+
+Javascript
+===
+Similar to C# in that recent browsers do just-in-time compilation. It is interpreted, object-oriented, functional, imperative.
+Different from C# in that it is interpreted in the browser. It used to be mostly used for web, but recently it is becoming popular in server-client applications because of it's "always-listening" architecture.
+
+
+Ruby
+===
+Similar to C# in that it needs an interpreter to run. It is object-oriented, functional,  imperative.
+Different from C# in that C# is a runtime-compiled language, while Ruby is an interpreted language. C# code is faster than Ruby. Ruby has a lot of frameworks built on top of it (e.g. Ruby on Rails)
+
+PHP
+===
+Similar to C# in that it is an object-oriented, functional language, and that it needs an interpreter.
+Different from C# in that it is a server-side scripting language (like ASP) and is most known for web development, although it can also be a general-purpose programming language (e.g. for Mobile Apps). it is procedural, 
+
+

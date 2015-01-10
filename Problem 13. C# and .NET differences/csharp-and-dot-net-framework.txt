@@ -1,0 +1,5 @@
+#Problem 13. C# and .NET Differences
+#Describe the difference between C# and .NET Framework in 2-3 sentences. 
+#Write your description in a text file called “csharp-and-dot-net-framework.txt”. #Use English.
+C# is a programming language, and its code is compiled into an intermediate language called managed assembly, which in turn is compiled by the .NET framework into native machine instructions.  The .NET framework also contains an extensive library of classes organized into namespaces that provide a lot of day-to-day functionality (e.g. String Operations, I/O, XML parsing) to build useful programs faster. 
+

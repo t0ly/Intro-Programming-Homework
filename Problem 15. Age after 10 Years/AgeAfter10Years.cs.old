@@ -1,0 +1,47 @@
+﻿//Problem 15.* Age after 10 Years
+
+//    Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.
+
+
+using System;
+
+
+class AgeAfter10Years
+{
+    static void Main(string[] args)
+    {
+        //Ask user for DOB and save input into strings   
+        Console.WriteLine("What is your date of birth? ");
+
+        Console.Write("Year of birth: ");
+        string stringYearOfBirth = Console.ReadLine();
+
+        Console.Write("Month of birth: ");
+        string stringMonthOfBirth = Console.ReadLine();
+
+        Console.Write("Day of birth: ");
+        string stringDayOfBirth = Console.ReadLine();
+
+
+        //Parse the birthdate
+        int YearOfBirth = int.Parse(stringYearOfBirth);
+        int MonthOfBirth = int.Parse(stringMonthOfBirth);
+        int DayOfBirth = int.Parse(stringDayOfBirth);
+        DateTime DOB = new DateTime(YearOfBirth, MonthOfBirth, DayOfBirth);
+
+
+        //Calculate birthdate
+        int Age = 0;
+
+        if (DateTime.Now.Month < DOB.Month && DateTime.Now.Day < DOB.Day)
+            Age = DateTime.Now.Year - DOB.Year - 1;
+        else        
+            Age = DateTime.Now.Year - DOB.Year;
+
+
+        //Tell the user her age
+        Console.WriteLine("Your age now is {0}", Age);
+        Console.WriteLine("Your age in 10 years will be {0}", (Age + 10));
+
+    }
+}

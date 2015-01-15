@@ -5,13 +5,15 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Declare Variables", "01.Declare Variables\01.Declare Variables.csproj", "{163B6329-FE22-40BB-9BAE-41058AE0B937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Float or Double", "02. Float or Double\02.Float or Double.csproj", "{B36C5EDD-27F8-40D5-B246-035038CAE755}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Float or Double", "02.Float or Double\02.Float or Double.csproj", "{B36C5EDD-27F8-40D5-B246-035038CAE755}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Hex", "03.Hex\03.Hex.csproj", "{A13762C3-30B0-47A2-AA67-500F544505B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Unicode", "04.Unicode\04.Unicode.csproj", "{2BF874C0-A621-44EE-A795-70C235450DED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Boolean", "05.Boolean\05.Boolean.csproj", "{07046B30-2C6D-45B2-BAA7-D2844953B792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.Triangle", "8.Triangle\8.Triangle.csproj", "{57B29E69-1243-460E-A323-DFF9F9B88549}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{07046B30-2C6D-45B2-BAA7-D2844953B792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07046B30-2C6D-45B2-BAA7-D2844953B792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07046B30-2C6D-45B2-BAA7-D2844953B792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B29E69-1243-460E-A323-DFF9F9B88549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B29E69-1243-460E-A323-DFF9F9B88549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B29E69-1243-460E-A323-DFF9F9B88549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B29E69-1243-460E-A323-DFF9F9B88549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

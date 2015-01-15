@@ -22,10 +22,10 @@ class FloatDoubleVar
             double doubleVar1 = 34.567839023;
             double doubleVar2 = 8923.1234857;
 
-
             Console.WriteLine("float floatVar1 12.345f is {0}",floatVar1);
             Console.WriteLine("float floatVar2 3456.091f is {0}", floatVar2);
             Console.WriteLine("double doubleVar1 34.567839023 is  {0}", doubleVar1);
             Console.WriteLine("double doubleVar2 8923.1234857  is {0}", doubleVar2);
+
         }
 }

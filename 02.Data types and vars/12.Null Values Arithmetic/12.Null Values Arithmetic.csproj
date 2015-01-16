@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57B29E69-1243-460E-A323-DFF9F9B88549}</ProjectGuid>
+    <ProjectGuid>{91B1225C-F1D3-4874-84C3-7883E3439884}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_8.Triangle</RootNamespace>
-    <AssemblyName>8.Triangle</AssemblyName>
+    <RootNamespace>_12.Null_Values_Arithmetic</RootNamespace>
+    <AssemblyName>12.Null Values Arithmetic</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="NullVallMath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

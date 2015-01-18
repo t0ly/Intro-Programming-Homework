@@ -14,20 +14,15 @@ class CompareFloats
 {
     static void Main(string[] args)
     {
-        double a = 2.000002;
-        double b = 2.000002;
+        double a = 5.00000001;
+        double b = 5.00000005;
         float precision = 0.000001f;
+        bool isEqual = Math.Abs(a - b) < precision;
 
-        if (Math.Abs(a - b) < precision)
-	    {
-           
-            Console.WriteLine("{0} is equal to {1} with precision {2}.", a, b, precision.ToString("f6", CultureInfo.InvariantCulture));
-	    
-        }    
+        if (isEqual)
+            Console.WriteLine("{0} is equal to {1} with precision {2}.", a, b, precision.ToString("f6", CultureInfo.InvariantCulture));  
         else
-	    {
             Console.WriteLine("{1} is not equal to {0} with precision {2}.", a, b, precision.ToString("f6", CultureInfo.InvariantCulture));
-	    }   
 
     }
 }

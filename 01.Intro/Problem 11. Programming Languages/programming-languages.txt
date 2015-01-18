@@ -18,18 +18,18 @@ Java is different from C# in that it is older by 7 years, is much more portable,
 
 Javascript
 ===
-Similar to C# in that recent browsers do just-in-time compilation. It is interpreted, object-oriented, functional, imperative.
+Similar to C# in that recent browsers do just-in-time compilation of Javascript. Both languages are interpreted, object-oriented, functional, imperative.
 Different from C# in that it is interpreted in the browser. It used to be mostly used for web, but recently it is becoming popular in server-client applications because of it's "always-listening" architecture.
 
 
 Ruby
 ===
-Similar to C# in that it needs an interpreter to run. It is object-oriented, functional,  and imperative.
-Different from C# in that C# is a runtime-compiled language, while Ruby is an interpreted language. C# code is faster than Ruby. Ruby has a lot of frameworks built on top of it (e.g. Ruby on Rails)
+Similar to C# in that it needs an interpreter to run. Both languages are object-oriented, functional,  and imperative.
+Different from C# in that C# is a runtime-compiled language, while Ruby is an interpreted language. C# code is faster than Ruby. Ruby has a quite a lot of frameworks built on top of it (e.g. Ruby on Rails).
 
 PHP
 ===
 Similar to C# in that it is an object-oriented, functional language, and that it needs an interpreter.
-Different from C# in that it is a server-side scripting language (like ASP) and is most known for web development, although it can also be a general-purpose programming language (e.g. for Mobile Apps). it is procedural, 
+Different from C# in that it is a server-side scripting language (like ASP) and is most known for web development, although it can also be a general-purpose programming language (e.g. for Mobile Apps). Unlike C#, PHP is a also a procedural language, although recently it is moving more towards object-oriented programming.
 
 

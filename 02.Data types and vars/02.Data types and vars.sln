@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Null Values Arithmetic",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Comparing Floats", "13.Comparing Floats\13.Comparing Floats.csproj", "{067B51B3-2EDC-445A-8DA6-A2B7121E5E15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Print the ASCII Table", "14.Print the ASCII Table\14.Print the ASCII Table.csproj", "{A4E3B794-2B1E-4479-AE0B-72C8FEAA2D33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{067B51B3-2EDC-445A-8DA6-A2B7121E5E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{067B51B3-2EDC-445A-8DA6-A2B7121E5E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{067B51B3-2EDC-445A-8DA6-A2B7121E5E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E3B794-2B1E-4479-AE0B-72C8FEAA2D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E3B794-2B1E-4479-AE0B-72C8FEAA2D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E3B794-2B1E-4479-AE0B-72C8FEAA2D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E3B794-2B1E-4479-AE0B-72C8FEAA2D33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

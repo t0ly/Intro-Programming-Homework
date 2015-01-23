@@ -15,7 +15,12 @@ class WeightOnMoon
 {
     static void Main(string[] args)
     {
-        double weightOnEarth = 74.6;            //86 53.7
+        Console.WriteLine("Enter weight in kilograms: ");
+
+        double weightOnEarth = Convert.ToDouble(Console.ReadLine());
+        
+        //74.6;            //86 53.7
+        
         double weightOnMoon = weightOnEarth * 0.17;
 
         Console.WriteLine("Weight on Moon = {0}", weightOnMoon);

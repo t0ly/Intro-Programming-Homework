@@ -20,8 +20,10 @@ class IsBitAtPosition
 {
     static void Main(string[] args)
     {
-        int n = 5343;
-        int p = 7;
+        Console.Write("Enter number: ");
+        int n = int.Parse(Console.ReadLine());  // 5343;  //set by user
+        Console.Write("Enter bit position: ");
+        int p = int.Parse(Console.ReadLine());  //7;      //set by user
 
         int mask = 1 << p;
         int bitAtIndex = (n & mask) >> p;

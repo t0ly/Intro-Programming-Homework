@@ -33,10 +33,11 @@ class FourDigitNr
             usrInput = Console.ReadLine();
 
             myNumber = 0;
-            bool usrInputIsNumber = int.TryParse(usrInput, out myNumber);
-            bool startsWith0 = usrInput.StartsWith("0");
             bool lengthCheckOK = (usrInput.Length == 4) ? true : false;
+            bool startsWith0 = usrInput.StartsWith("0");
+            bool usrInputIsNumber = int.TryParse(usrInput, out myNumber);
 
+            
             if (lengthCheckOK && !startsWith0 && usrInputIsNumber)
                 break;
 

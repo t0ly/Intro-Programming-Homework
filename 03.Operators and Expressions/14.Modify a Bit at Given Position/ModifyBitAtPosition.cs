@@ -20,9 +20,10 @@ class ModifyBitAtPosition
 {
     static void Main(string[] args)
     {
-        int n = 0;        
-        int p = 9;
-        int v = 1;
+        int n = 0;  
+        int p = 9;  // will be set by user
+        int v = 1;  // will be set by user
+        
         int mask = (1 << p);
         int m = (v == 0) ? n & ~mask : n | mask; 
 

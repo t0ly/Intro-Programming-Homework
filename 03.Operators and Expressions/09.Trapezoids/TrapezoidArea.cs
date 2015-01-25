@@ -18,9 +18,12 @@ class TrapezoidArea
     static void Main(string[] args)
     {
 
-        double a = 8.5;
-        double b = 4.3;
-        double h = 2.7;
+        Console.Write("Please enter trapezoid top width: ");
+        double a = double.Parse(Console.ReadLine());    // 8.5;
+        Console.Write("Please enter trapezoid base width: ");
+        double b = double.Parse(Console.ReadLine());    //4.3;
+        Console.Write("Please enter trapezoid height: ");
+        double h = double.Parse(Console.ReadLine());    //2.7;
 
         double area = (a + b) * h / 2;
 

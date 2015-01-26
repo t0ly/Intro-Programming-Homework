@@ -26,20 +26,23 @@ class PrintCoInfo
         Console.Write(" address: ");
         string coAddress = Console.ReadLine();
         Console.Write(" phone number: ");
+        string tempcoPhone = Console.ReadLine().Replace("+",null);
+        tempcoPhone = tempcoPhone.StartsWith("359") ? tempcoPhone : "359" + tempcoPhone;
+        tempcoPhone = tempcoPhone.Replace(" ",null).Replace("-",null).Replace("(",null).Replace(")",null);
         int coPhone;
-        string tmp = ParseNum(coPhone);
-        bool phoneParse = int.TryParse(Parser(coPhone), out coPhone);
+        bool phoneParse = int.TryParse(tempcoPhone, out coPhone);
         Console.Write(" fax number: ");
         string coFax = Console.ReadLine();
+        coFax = coFax.Length < 3 ? "(no fax)" : coFax;
         Console.Write(" web site: ");
         string coWebsite = Console.ReadLine();
         coWebsite = coWebsite.StartsWith("http://")? coWebsite : "http://" + coWebsite;
 
         Console.Write("Manager first name: ");
         string mgrFirstname = Console.ReadLine();
-        mgrFirstname = mgrFirstname.Length == 0 ? "no firstname" : mgrFirstname;
+        mgrFirstname = mgrFirstname.Length < 2 ? "(no firstname)" : mgrFirstname;
         Console.Write(" last name: ");
-        string mgrLastname = Console.ReadLine() ?? "(no lastname)";
+        string mgrLastname = Console.ReadLine().Length == 0 ? "(no lastname)" : Console.ReadLine();
         Console.Write(" age: ");
         string mgrAge = Console.ReadLine();
         Console.Write(" phone number: ");
@@ -51,7 +54,7 @@ Address: {1}
 Tel. {2,6:+### ### ## ## ##} 
 Fax: {3,6:+### ### ## ## ##}
 Web site: {4,6}
-Manager: {5} {6} (age: {7}, tel. {8,1:+### ## ### ###})  
+Manager: {5} {6} (age: {7}, tel. {8,1:+### ## ### ###})
 ", coName, coAddress, coPhone, coFax, coWebsite, mgrFirstname, mgrLastname, mgrAge, mgrPhone);
 
 

@@ -12,12 +12,7 @@ using System;
 
 class PrintCoInfo
 {
-    static string ParseNum(string inputstr)
-    {
-
-        return inputstr.Replace(" ", null).Replace("-", null).Replace("(", null).Replace(")", null).Replace("/", null);
-        
-    }
+    
 
     static void Main(string[] args)
     {

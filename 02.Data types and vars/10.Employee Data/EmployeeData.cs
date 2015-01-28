@@ -21,7 +21,7 @@ class EmployeeData
 
     string firstName = "Ivan";
     string lastName = "Ivanov";
-    int age = 20;
+    byte age = 20;
     char gender = 'm';              //
     long personalID = 8306112507;
     long employeeID = 27560000;     // …27569999)

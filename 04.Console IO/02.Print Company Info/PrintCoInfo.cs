@@ -7,49 +7,66 @@
 */
 
 using System;
-
+using System.Text.RegularExpressions;
 
 
 class PrintCoInfo
 {
-    
+
+    public static string JustNumbers(string phone)
+    {
+        Regex digitsOnly = new Regex(@"[^\d]");
+        return digitsOnly.Replace(phone, "");
+    }
+
 
     static void Main(string[] args)
     {
+        
+
         Console.Write("Please enter company name: ");
         string coName = Console.ReadLine();
+        coName = coName.Length == 0 ? "(no name)" : coName;
         Console.Write(" address: ");
         string coAddress = Console.ReadLine();
-        Console.Write(" phone number: ");
-        string tempcoPhone = Console.ReadLine().Replace("+",null);
-        tempcoPhone = tempcoPhone.StartsWith("359") ? tempcoPhone : "359" + tempcoPhone;
-        tempcoPhone = tempcoPhone.Replace(" ",null).Replace("-",null).Replace("(",null).Replace(")",null);
+        coAddress = coAddress.Length == 0 ? "(online bussiness)" : coAddress;
+        
+        Console.Write(" phone number: ");        
         int coPhone;
-        bool phoneParse = int.TryParse(tempcoPhone, out coPhone);
-        Console.Write(" fax number: ");
-        string coFax = Console.ReadLine();
-        coFax = coFax.Length < 3 ? "(no fax)" : coFax;
+        bool coPhoneIsNumber  = int.TryParse(JustNumbers(Console.ReadLine()), out coPhone);
+
+        Console.Write(" fax number: ");        
+        int coFax ;
+        bool coFaxIsNum = int.TryParse(JustNumbers(Console.ReadLine()), out coFax);
+     
         Console.Write(" web site: ");
         string coWebsite = Console.ReadLine();
-        coWebsite = coWebsite.StartsWith("http://")? coWebsite : "http://" + coWebsite;
-
+        coWebsite = coWebsite.Length == 0 ? "(no website)" : "http://" + coWebsite.Replace("http://",null).Replace("/",null);  //make sure address is starts with "http://"        
+        
         Console.Write("Manager first name: ");
         string mgrFirstname = Console.ReadLine();
-        mgrFirstname = mgrFirstname.Length < 2 ? "(no firstname)" : mgrFirstname;
+        mgrFirstname = mgrFirstname.Length == 0 ? "(no firstname)" : mgrFirstname;
         Console.Write(" last name: ");
-        string mgrLastname = Console.ReadLine().Length == 0 ? "(no lastname)" : Console.ReadLine();
+        string mgrLastname = Console.ReadLine();
+        mgrLastname = mgrLastname.Length == 0 ? "(no lastname)" : mgrLastname;
         Console.Write(" age: ");
-        string mgrAge = Console.ReadLine();
+        int mgrAge;
+        bool mgrAgeExists = int.TryParse(JustNumbers(Console.ReadLine()), out mgrAge);
+        
+
         Console.Write(" phone number: ");
-        string mgrPhone = Console.ReadLine();
+        int mgrPhone;
+        bool mgrPhoneExists = int.TryParse(JustNumbers(Console.ReadLine()), out mgrPhone);
+    
+
 
         Console.WriteLine(@"
 {0}
 Address: {1}
-Tel. {2,6:+### ### ## ## ##} 
-Fax: {3,6:+### ### ## ## ##}
+Tel. {2:### ### ## ## ##} 
+Fax: {3:### ### ## ## ##}
 Web site: {4,6}
-Manager: {5} {6} (age: {7}, tel. {8,1:+### ## ### ###})
+Manager: {5} {6} (age: {7}, tel. {8:### ## ### ###})
 ", coName, coAddress, coPhone, coFax, coWebsite, mgrFirstname, mgrLastname, mgrAge, mgrPhone);
 
 

@@ -17,7 +17,7 @@ class BankAccountData
         string lastName = "Unknown";
         object acctHolderName = firstName + ' ' + middleName + ' ' + lastName;
         
-        double balance = 0.0;
+        decimal balance = 0.0m;
         string bankName = "Unknown Bank";
         string iban = null;
         ulong? creditCardNr1 = null;

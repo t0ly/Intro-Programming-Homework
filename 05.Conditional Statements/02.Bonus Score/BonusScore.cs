@@ -15,8 +15,52 @@ class BonusScore
 {
     static void Main(string[] args)
     {
-        byte score = 0;
-    
-    
+        Console.WriteLine("Enter score [1-9] to calculate bonus score");
+        int score = int.Parse(Console.ReadLine());
+        int bonus = 0;
+
+        //the if way
+        if ((1 <= score) && (score <= 3 ))
+        {
+            bonus = score * 10;
+        }
+        else if ((4 <= score) && (score <= 6))
+        {
+            bonus = score * 100;
+        }
+        else if ((7 <= score) && (score <= 9))
+        {
+            bonus = score * 1000;
+        }
+        else
+        {
+            Console.WriteLine("Invalid Score! (\"if\" method)");
+        }
+
+
+        ////the switch way
+        //switch (score)
+        //{
+        //    case 1:
+        //    case 2:
+        //    case 3:
+        //        bonus = score * 10;
+        //        break;
+        //    case 4:
+        //    case 5:
+        //    case 6:
+        //        bonus = score * 100;
+        //        break;
+        //    case 7:
+        //    case 8:
+        //    case 9:
+        //        bonus = score * 1000;
+        //        break;
+        //    default:
+        //        Console.WriteLine("Invalid Score! (\"switch\" method)");
+        //        break;
+        //}
+
+        Console.WriteLine("Your score is {0}", bonus);
     }
 }

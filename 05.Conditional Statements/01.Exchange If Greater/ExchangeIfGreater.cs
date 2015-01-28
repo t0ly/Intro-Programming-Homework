@@ -20,7 +20,7 @@ class ExchangeIfGreater
         
         double c = 0;
 
-        if (a - b > 0 )
+        if (a.CompareTo(b) > 0)
         {
             c = a;
             a = b;

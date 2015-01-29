@@ -10,20 +10,25 @@ using System.Globalization;
 
 class BeerTime
 {
+
+
     static void Main(string[] args)
     {
 
         Console.Write("Enters a time in format hh:mm AM (or PM): ");
-        DateTime selectedTime = DateTime.ParseExact(Console.ReadLine(), "d", CultureInfo.InvariantCulture);
-        DateTime beerTimeStart = "1:00 PM";
-        DateTime beerTimeEnd = "3:00 AM";
+        DateTime inputTime = DateTime.Parse(Console.ReadLine());
+       
+        DateTime beerTimeStart = DateTime.Parse("1:00 PM");  
+        DateTime beerTimeEnd =  DateTime.Parse("3:00 AM").AddDays(1);
 
 
-        if (DateTime.Compare(selectedTime,)
+        if (inputTime > beerTimeStart && inputTime < beerTimeEnd)
         {
-
             Console.WriteLine("beer time");
         }
-
+        else
+        {
+            Console.WriteLine("non-beer time");
+        }
     }
 }
